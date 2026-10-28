@@ -1,4 +1,5 @@
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace ExtensionMethods;
 
@@ -81,8 +82,33 @@ public static class StringExtensions
 
     public static string CleanPath(this string value)
     {
-        
-        
+        if (string.IsNullOrEmpty(value))
+        {
+            return value;
+        }
+
+        return value
+            .Replace(":", "")
+            .Replace("\"", "")
+            .Replace("/", "")
+            .Replace("\\", "")
+            .Replace("|", "")
+            .Replace("\n", "");
+    }
+
+    public static string AddSuffix(this string value, string suffix)
+    {
+        if (string.IsNullOrEmpty(suffix))
+        {
+            throw new ArgumentException("Suffix cannot be null or empty.", nameof(suffix));
+        }
+
+        if (value.EndsWith(suffix, StringComparison.OrdinalIgnoreCase))
+        {
+            return value.Substring(0, value.Length - suffix.Length) + suffix;
+        }
+
+        return value + suffix;
     }
 
 }

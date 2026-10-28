@@ -9,3 +9,4 @@ C:\Users\nicol\ExtensionMethods\ExtensionMethods\obj\Debug\net10.0\ExtensionMeth
 C:\Users\nicol\ExtensionMethods\ExtensionMethods\obj\Debug\net10.0\refint\ExtensionMethods.dll
 C:\Users\nicol\ExtensionMethods\ExtensionMethods\obj\Debug\net10.0\ExtensionMethods.pdb
 C:\Users\nicol\ExtensionMethods\ExtensionMethods\obj\Debug\net10.0\ref\ExtensionMethods.dll
+C:\Users\nicol\ExtensionMethods\ExtensionMethods\obj\Debug\net10.0\ExtensionMethods.sourcelink.json

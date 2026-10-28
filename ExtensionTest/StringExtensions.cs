@@ -56,7 +56,15 @@ public sealed class StringExtensionTests
     [TestMethod]
     public void TestCleanPath()
     {   
-        var str = "L|u\n.d/+i";
+        var str = @"L|u\n.d/+i";
         Assert.AreEqual("Lun.d+i", str.CleanPath());
+    }
+
+    [TestMethod]
+    public void TestAddSuffix()
+    {
+        Assert.AreEqual("IndiaTest", "India".AddSuffix("Test"));
+        Assert.AreEqual("IndiaTest", "IndiaTest".AddSuffix("Test"));
+        Assert.AreEqual("indiaTest", "indiatest".AddSuffix("Test"));
     }
 }

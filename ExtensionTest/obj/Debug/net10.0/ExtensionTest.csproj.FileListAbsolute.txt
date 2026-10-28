@@ -269,3 +269,4 @@ C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\refint\Extension
 C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ExtensionTest.pdb
 C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ExtensionTest.genruntimeconfig.cache
 C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ref\ExtensionTest.dll
+C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ExtensionTest.sourcelink.json
