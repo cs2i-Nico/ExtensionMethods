@@ -1,0 +1,11 @@
+C:\Users\nicol\ExtensionMethods\ExtensionMethods\bin\Debug\net10.0\ExtensionMethods.deps.json
+C:\Users\nicol\ExtensionMethods\ExtensionMethods\bin\Debug\net10.0\ExtensionMethods.dll
+C:\Users\nicol\ExtensionMethods\ExtensionMethods\bin\Debug\net10.0\ExtensionMethods.pdb
+C:\Users\nicol\ExtensionMethods\ExtensionMethods\obj\Debug\net10.0\ExtensionMethods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicol\ExtensionMethods\ExtensionMethods\obj\Debug\net10.0\ExtensionMethods.AssemblyInfoInputs.cache
+C:\Users\nicol\ExtensionMethods\ExtensionMethods\obj\Debug\net10.0\ExtensionMethods.AssemblyInfo.cs
+C:\Users\nicol\ExtensionMethods\ExtensionMethods\obj\Debug\net10.0\ExtensionMethods.csproj.CoreCompileInputs.cache
+C:\Users\nicol\ExtensionMethods\ExtensionMethods\obj\Debug\net10.0\ExtensionMethods.dll
+C:\Users\nicol\ExtensionMethods\ExtensionMethods\obj\Debug\net10.0\refint\ExtensionMethods.dll
+C:\Users\nicol\ExtensionMethods\ExtensionMethods\obj\Debug\net10.0\ExtensionMethods.pdb
+C:\Users\nicol\ExtensionMethods\ExtensionMethods\obj\Debug\net10.0\ref\ExtensionMethods.dll
