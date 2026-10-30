@@ -263,10 +263,11 @@ C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ExtensionTest.ge
 C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ExtensionTest.AssemblyInfoInputs.cache
 C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ExtensionTest.AssemblyInfo.cs
 C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ExtensionTest.csproj.CoreCompileInputs.cache
+C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ExtensionTest.sourcelink.json
 C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\Extensio.86BB97E9.Up2Date
 C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ExtensionTest.dll
 C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\refint\ExtensionTest.dll
 C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ExtensionTest.pdb
 C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ExtensionTest.genruntimeconfig.cache
 C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ref\ExtensionTest.dll
-C:\Users\nicol\ExtensionMethods\ExtensionTest\obj\Debug\net10.0\ExtensionTest.sourcelink.json
+C:\Users\nicol\ExtensionMethods\ExtensionTest\bin\Debug\net10.0\fr\MSTestAdapter.PlatformServices.resources.dll

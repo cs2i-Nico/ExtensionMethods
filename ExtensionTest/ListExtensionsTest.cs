@@ -95,16 +95,43 @@ public sealed class ListExtensionsTest
         Assert.AreEqual(5, list.MaxValue2());
         Assert.AreEqual(45.1, list2.MaxValue2());
         Assert.AreEqual("longggggggg", list3.MaxValue2());
-        Assert.AreEqual(list4[1], list4.MaxValue2());
+        Assert.AreEqual(list4[2], list4.MaxValue2());
     }
 
-    [TestMethod]
+        [TestMethod]
 
     public void TestFiltreCriteria()
     {
         var list = new List<string> { "lundi", "mardi", "mercredi", "jeudi","vendredi", "samedi", "dimanche"};
         var expected = new List<string> { "mercredi", "vendredi" };
 
-        CollectionAssert.AreEqual(expected, list.FiltreCriteria("re"));
+        CollectionAssert.AreEqual(expected, list.FilterList("re", PositionEnum.Middle));
     }
+
+    [TestMethod]
+    public void TestLimit()
+    {
+        var list = new List<string> { "lundi", "mardi", "mercredi", "jeudi", "vendredi" };
+        var expected = new List<string> { "lundi", "mardi" };
+        var list2 = new List<int> { 10, 20, 30, 40, 50 };
+        var expected2 = new List<int> { 10, 20, 30 };
+
+        CollectionAssert.AreEqual(expected, list.Limit(2));
+        CollectionAssert.AreEqual(expected2, list2.Limit(3));
+    }
+
+    [TestMethod]
+    public void TestFilterListPosition()
+    {
+        var list = new List<string> { "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche" };
+        CollectionAssert.AreEqual(new List<string> { "lundi" }, list.FilterList("lu", PositionEnum.Start));
+        CollectionAssert.AreEqual(new List<string> { "mercredi", "vendredi" }, list.FilterList("re", PositionEnum.Middle));
+    }
+    [TestMethod]
+    public void TestFilterListLongueur()
+    {
+        var list = new List<string> { "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche" };
+        CollectionAssert.AreEqual(new List<string> { "lundi", "mardi", "jeudi" }, list.FilterList("lu", PositionEnum.Start, 5));
+    }
+
 }

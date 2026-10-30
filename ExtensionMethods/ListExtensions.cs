@@ -1,7 +1,14 @@
 namespace ExtensionMethods;
 
+public enum PositionEnum
+{
+    Start,
+    Middle,
+    End,
+}
 public static class ListExtensions
 {
+
     public static List<int> FilterList(this List<int> list, int minValue)
     {
         List<int> filteredList = new List<int>();
@@ -136,7 +143,7 @@ public static class ListExtensions
         return (double)total / list.Count;
     }
 
-    public static T MaxValue2<T>(this List<T> list) where T : IComparable<T>
+    public static T MaxValue2<T>(this List<T> list) where T : IComparable
     {
         if (list.Count == 0)
         {
@@ -154,5 +161,77 @@ public static class ListExtensions
         return maxValue;
     }
 
+    public static List<string> FilterList(this List<string> list, string criteria, PositionEnum position = PositionEnum.Middle,int chars = 0)
+    {
+        var tempList = new List<string>();
 
+        foreach (var s in list)
+        {
+            if (chars > 0 && s.Length == chars)
+            {
+                tempList.Add(s);
+            }
+            else
+            {
+                switch (position)
+                {
+                    case PositionEnum.Start:
+                        if (s.StartsWith(criteria))
+                        {
+                            tempList.Add(s);
+                        }
+                        break;
+                    case PositionEnum.Middle:
+                        if (s.Contains(criteria))
+                        {
+                            tempList.Add(s);
+                        }
+                        break;
+                    case PositionEnum.End:
+                        if (s.EndsWith(criteria))
+                        {
+                            tempList.Add(s);
+                        }
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException(nameof(position), position, null);
+                }
+            }
+        }
+
+        return tempList;
+    }
+
+    public static List<T> Limit<T>(this List<T> list, int max)
+    {
+        if (max < 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(max), "Max must be a positive integer.");
+        }
+
+        var result = new List<T>();
+
+        for (int i = 0; i < max && i < list.Count; i++)
+        {
+            result.Add(list[i]);
+        }
+
+        return result;
+    }
+
+    
+    public static List<string> FilterList2(this List<string> list, Func<string, bool> criteria)
+    {
+        var List = new List<string>();
+
+        foreach (var s in list)
+        {
+            if (criteria(s))   
+            {
+                List.Add(s);
+            }
+        }
+
+        return List;
+    }
 }
