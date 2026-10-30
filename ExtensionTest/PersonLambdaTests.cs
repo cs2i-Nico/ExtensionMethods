@@ -33,6 +33,21 @@ public sealed class PersonLambdaTests
         getInfo = person => person.Firstname;
         Assert.AreEqual("Peggy", getInfo(p));
 
+        getInfo = person => person.Lastname + " " + person.Firstname;
+        Assert.AreEqual("Sez Peggy", getInfo(p));
+
+        getInfo = person => person.ToString();
+        Assert.AreEqual("Sez Peggy", getInfo(p));
+
+        getInfo = person => person.Lastname.ToUpper() + " " + person.Firstname;
+        Assert.AreEqual("SEZ Peggy", getInfo(p));
+
+        getInfo = person => person.Firstname.Substring(0, 1) + ". " + person.Lastname;
+        Assert.AreEqual("P. Sez", getInfo(p));
+
+        p.Birthday = new DateTime(1990, 5, 14);
+        getInfo = person => person.Firstname + " a pour nom " + person.Lastname;
+        Assert.AreEqual("Peggy a pour nom Sez", getInfo(p));
     }
     
 }
